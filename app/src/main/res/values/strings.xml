@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Examen1Ev</string>
+    <string name="anadir">Añadir</string>
+    <string name="valoracion">Valoración</string>
+    <string name="equipos">Equipos</string>
+    <string name="evento">Evento</string>
+    <string name="txtDeporte">Deporte</string>
+    <string name="txtEvento">Evento</string>
+    <string name="txtEquipos">Equipos</string>
+    <string name="txtValoracion">Valoracion</string>
+    <string name="txtResultado">Resultado</string>
+    <string name="cancelar">Cancelar</string>
+</resources>

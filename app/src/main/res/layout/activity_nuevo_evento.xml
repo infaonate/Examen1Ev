@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NuevoEvento">
+
+    <EditText
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/txtResultado"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toEndOf="@+id/lblResultados"
+        app:layout_constraintTop_toBottomOf="@+id/txtEquipo"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <TextView
+        android:id="@+id/lblDeporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deporte"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblEvento"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <TextView
+        android:id="@+id/lblResultados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblEquipos"
+        app:layout_constraintVertical_bias="0.211" />
+
+    <TextView
+        android:id="@+id/lblValoracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valoracion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblResultados"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <TextView
+        android:id="@+id/lblEquipos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/equipos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblDeporte"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <TextView
+        android:id="@+id/lblEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/evento"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <EditText
+        android:id="@+id/txtDeporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/txtDeporte"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toEndOf="@+id/lblDeporte"
+        app:layout_constraintTop_toBottomOf="@+id/txtEvento"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <EditText
+        android:id="@+id/txtEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/txtEvento"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblEvento"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <EditText
+        android:id="@+id/txtEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/txtEquipos"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toEndOf="@+id/lblEquipos"
+        app:layout_constraintTop_toBottomOf="@+id/txtDeporte"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <EditText
+        android:id="@+id/txtValoracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/txtValoracion"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toEndOf="@+id/lblValoracion"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultado"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <Button
+        android:id="@+id/btnAnadirEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginBottom="103dp"
+        android:text="@string/anadir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lblValoracion"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:text="@string/cancelar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnAnadirEvento"
+        app:layout_constraintEnd_toEndOf="@+id/txtValoracion"
+        app:layout_constraintStart_toEndOf="@+id/btnAnadirEvento" />
+</androidx.constraintlayout.widget.ConstraintLayout>
